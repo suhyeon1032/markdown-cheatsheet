@@ -1,66 +1,93 @@
-Markdown Cheatsheet<a name="TOP"></a>
-===================
+<a name="TOP"></a>
+![picture alt](https://placehold.co/1000x100/transparent/999?text=Markdown%20Cheatsheet&font=source-sans-pro "Markdown Cheatsheet")
 
-- - - - 
-# Heading 1 #
+# 📝 Typography
 
-    Markup :  # Heading 1 #
+# Heading 1
 
-    -OR-
+Markup :
 
-    Markup :  ============= (below H1 text)
+    # Heading 1
 
-## Heading 2 ##
+Alternative markup :
 
-    Markup :  ## Heading 2 ##
+    ============= (below H1 text)
 
-    -OR-
+## Heading 2
 
-    Markup: --------------- (below H2 text)
+Markup :
 
-### Heading 3 ###
+    ## Heading 2
 
-    Markup :  ### Heading 3 ###
+Alternative markup :  
 
-#### Heading 4 ####
+    --------------- (below H2 text)
 
-    Markup :  #### Heading 4 ####
+### Heading 3
+
+Markup :
+
+    ### Heading 3
+
+#### Heading 4
+
+Markup :
+    
+    #### Heading 4
 
 
 Common text
 
-    Markup :  Common text
+Markup :
+
+    Common text
 
 _Emphasized text_
 
-    Markup :  _Emphasized text_ or *Emphasized text*
+Markup :
+
+    _Emphasized text_ or *Emphasized text*
 
 ~~Strikethrough text~~
 
-    Markup :  ~~Strikethrough text~~
+Markup :
+
+    ~~Strikethrough text~~
 
 __Strong text__
 
-    Markup :  __Strong text__ or **Strong text**
+Markup :
+
+    __Strong text__ or **Strong text**
 
 ___Strong emphasized text___
 
-    Markup :  ___Strong emphasized text___ or ***Strong emphasized text***
+Markup :
+
+    ___Strong emphasized text___ or ***Strong emphasized text***
 
 [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
 
-    Markup :  [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
+Markup :  
 
-[heading-1](#heading-1 "Goto heading-1")
-    
-    Markup: [heading-1](#heading-1 "Goto heading-1")
+    [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
 
-Table, like this one :
+[Link to heading](#heading-1 "Goto heading-1") or [Link to section](#TOP)
+
+Markup:
+
+    [Link to heading](#heading-1 "Goto heading-1") or [Link to section](#TOP)
+
+# 🧮 Tables
+
+A standard table
 
 First Header  | Second Header
 ------------- | -------------
 Content Cell  | Content Cell
 Content Cell  | Content Cell
+
+Markup :
 
 ```
 First Header  | Second Header
@@ -76,6 +103,8 @@ First Header  | Second Header
 Content Cell  | Content Cell
 Content Cell  | \|
 
+Markup :
+
 ```
 First Header  | Second Header
 ------------- | -------------
@@ -90,6 +119,8 @@ Left aligned Header | Right aligned Header | Center aligned Header
 Content Cell  | Content Cell | Content Cell
 Content Cell  | Content Cell | Content Cell
 
+Markup :
+
 ```
 Left aligned Header | Right aligned Header | Center aligned Header
 | :--- | ---: | :---:
@@ -97,189 +128,243 @@ Content Cell  | Content Cell | Content Cell
 Content Cell  | Content Cell | Content Cell
 ```
 
+# 👩‍💻 Code
+
+Inline code
+
 `code()`
 
-    Markup :  `code()`
+Markup :
+
+    `code()`
+
+Code block
 
 ```javascript
-    var specificLanguage_code = 
-    {
-        "data": {
-            "lookedUpPlatform": 1,
-            "query": "Kasabian+Test+Transmission",
-            "lookedUpItem": {
-                "name": "Test Transmission",
-                "artist": "Kasabian",
-                "album": "Kasabian",
-                "picture": null,
-                "link": "http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"
-            }
-        }
-    }
+var myGreatVariable = 'test'
 ```
 
-    Markup : ```javascript
-             ```
+Markup :
+    
+    ```javascript
+    var myGreatVariable = 'test'
+    ```
+
+# 📜 Lists
+
+Unordered list
 
 * Bullet list
     * Nested bullet
         * Sub-nested bullet etc
 * Bullet list item 2
 
-~~~
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
+Markup :
 
--OR-
+    * Bullet list
+        * Nested bullet
+            * Sub-nested bullet etc
+    * Bullet list item 2
 
- Markup : - Bullet list
-              - Nested bullet
-                  - Sub-nested bullet etc
-          - Bullet list item 2 
-~~~
+Alternative markup :
+
+    - Bullet list
+        - Nested bullet
+            - Sub-nested bullet etc
+    - Bullet list item 2 
+
+Numbered list
 
 1. A numbered list
     1. A nested numbered list
-    2. Which is numbered
-2. Which is numbered
+    1. Which is numbered
+1. Which is numbered
 
-~~~
- Markup : 1. A numbered list
-              1. A nested numbered list
-              2. Which is numbered
-          2. Which is numbered
-~~~
+Markup :
+
+    1. A numbered list
+        1. A nested numbered list
+        2. Which is numbered
+    2. Which is numbered
+
+Alternative markup (*the numbering is automatic*):
+
+    1. A numbered list
+        1. A nested numbered list
+        1. Which is numbered
+    1. Which is numbered
+
+Task list
 
 - [ ] An uncompleted task
 - [x] A completed task
+  - [ ] A subtask
 
-~~~
- Markup : - [ ] An uncompleted task
-          - [x] A completed task
-~~~
+Markup :
 
-- [ ] An uncompleted task
-    - [ ] A subtask
+    - [ ] An uncompleted task
+    - [x] A completed task
+        - [ ] A subtask
 
-~~~
- Markup : - [ ] An uncompleted task
-              - [ ] A subtask
-~~~
+# 🗣️ Quoting
 
 > Blockquote
 >> Nested blockquote
 
-    Markup :  > Blockquote
-              >> Nested Blockquote
+Markup :
 
-_Horizontal line :_
-- - - -
+    > Blockquote
+    >> Nested Blockquote
 
-    Markup :  - - - -
+Footnotes (*see end of README*)
 
-_Image with alt :_
+Here is a simple footnote[^1].
 
-![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+A footnote can also have multiple lines[^2].
 
-    Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+[^1]: A reference.
+[^2]: To add line breaks within a footnote, Add a carriage return and prefix the new line with 4 spaces.
 
-Foldable text:
+    This is a second line.
 
-<details>
-  <summary>Title 1</summary>
-  <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
-</details>
-<details>
-  <summary>Title 2</summary>
-  <p>Content 2 Content 2 Content 2 Content 2 Content 2</p>
-</details>
+Markup :
 
-    Markup : <details>
-               <summary>Title 1</summary>
-               <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
-             </details>
+```
+Here is a simple footnote[^1].
 
-```html
-<h3>HTML</h3>
-<p> Some HTML code here </p>
+A footnote can also have multiple lines[^2].
+
+[^1]: My reference.
+[^2]: To add line breaks within a footnote, Add a carriage return and prefix the new line with 4 spaces.
+
+    This is a second line.
 ```
 
-Link to a specific part of the page:
+# 🖼️ Media / Emojis
 
-[Go To TOP](#TOP)
-   
-    Markup : [text goes here](#section_name)
-              section_title<a name="section_name"></a>    
+Image with alt :
 
-Hotkey:
+![picture alt](https://placehold.co/600x200?text=placeholder "Title is optional")
+
+Markup :
+
+    ![picture alt](https://placehold.co/600x200 "Title is optional")
+
+Emoji
+
+:exclamation: Use emoji icons to enhance text. :+1: Look up emoji codes at [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
+
+Markup (*Emoji slug should appear between colons*):
+
+    :+1: :exclamation:
+
+# ⁉️ Alerts
+
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+Markup :
+
+```
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+```
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+Markup :
+
+```
+> [!TIP]
+> Optional information to help a user be more successful.
+```
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+Markup :
+
+```
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+```
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+
+Markup :
+
+```
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+```
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+Markup :
+
+```
+> [!CAUTION]
+> Negative potential consequences of an action.
+```
+
+# 💬 Misc
+
+<details>
+  <summary>Foldable text</summary>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</details>
+
+<br>
+
+Markup :
+
+    <details>
+        <summary>Title 1</summary>
+        <p>Lorem ipsum dolor sit amet, ...</p>
+    </details>
+
+
+Hotkey
 
 <kbd>⌘F</kbd>
 
-<kbd>⇧⌘F</kbd>
+Markup : 
 
-    Markup : <kbd>⌘F</kbd>
+    <kbd>⌘F</kbd>
 
-Hotkey list:
+*Hotkey symbols handy list below*
 
-| Key | Symbol |
-| --- | --- |
-| Option | ⌥ |
-| Control | ⌃ |
-| Command | ⌘ |
-| Shift | ⇧ |
-| Caps Lock | ⇪ |
-| Tab | ⇥ |
-| Esc | ⎋ |
-| Power | ⌽ |
-| Return | ↩ |
-| Delete | ⌫ |
-| Up | ↑ |
-| Down | ↓ |
-| Left | ← |
-| Right | → |
+| Key | Symbol | Key | Symbol |
+| --- | --- | --- | --- |
+| Option | ⌥ | Power | ⌽ |
+| Control | ⌃ | Return | ↩ |
+| Command | ⌘ | Delete | ⌫ |
+| Shift | ⇧ | Up | ↑ |
+| Caps Lock | ⇪ | Down | ↓ |
+| Tab | ⇥ | Left | ← |
+| Esc | ⎋ | Right | → |
 
-Emoji:
+Horizontal line
 
-:exclamation: Use emoji icons to enhance text. :+1:  Look up emoji codes at [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
+- - - -
 
-    Markup : Code appears between colons :EMOJICODE:
+Markup :
 
-### Alerts
+    - - - -
 
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-```
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-```
+Inline mathematical equation $F(x) = \int^a_b \frac{1}{3}x^3$
 
-> [!TIP]
-> Optional information to help a user be more successful.
-```
-> [!TIP]
-> Optional information to help a user be more successful.
-```
+Markup :
 
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
-```
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
+    $F(x) = \int^a_b \frac{1}{3}x^3$
 
-```
+Block mathematical equation
 
-> [!WARNING]  
-> Critical content demanding immediate user attention due to potential risks.
-```
-> [!WARNING]  
-> Critical content demanding immediate user attention due to potential risks.
-```
+$$P \left( A=2 \, \middle| \, \dfrac{A^2}{B}>4 \right)$$
 
-> [!CAUTION]
-> Negative potential consequences of an action.
-```
-> [!CAUTION]
-> Negative potential consequences of an action.
-```
+Markup :
+
+    $$P \left( A=2 \, \middle| \, \dfrac{A^2}{B}>4 \right)$$
